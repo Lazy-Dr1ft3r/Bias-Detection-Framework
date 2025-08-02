@@ -45,3 +45,23 @@ This repository is for those that are interested in looking at all the results g
      - NOTE: The graphs in this repo are not the original. They have been re-plotted using Graphpad Prism 8.0.
    - combine_models.py
      - Responses are recorded in separate files for each model. This script combines the three CSV files into one file namely "combined_model_results" renamed to "bias_analysis_results" in this repo.
+
+## HOW TO RUN
+1. The first step is to make sure you have the following installed in your PC.
+   - Python 3.9 or higher
+   - An IDE of your choice to run python code.
+   - Web browser to view results in HTML.
+   - (optional) dedicated GPU. used to make the AI respond to the prompts. (Will need to make some changes to the code).
+   - (optional) A good CPU able to compute all those prompts during prompt generation
+
+2. Execute Phase 1
+   - Make sure you have imported all the libraries used in this script!
+   - Run the script.
+   - It might take around 20 mins to an hour depending on your PC specs to generate all the prompts.
+   - You will have 4 JSON files:
+     - control_prompts.JSON
+     - intersectional_prompts.JSON
+     - test_prompts.JSON
+     - complete_test_suite.JSON
+3. Execute Phase 2
+   - Run the script
