@@ -1,0 +1,173 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Intersectional Bias Detection Framework - Analysis Report</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1, h2, h3 { color: #333366; }
+                    .summary { background-color: #f0f0f0; padding: 15px; border-radius: 5px; }
+                    .metric { margin-bottom: 10px; }
+                    .metric-name { font-weight: bold; }
+                    .visualization { margin: 20px 0; }
+                    table { border-collapse: collapse; width: 100%; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                    tr:nth-child(even) { background-color: #f9f9f9; }
+                </style>
+            </head>
+            <body>
+                <h1>Intersectional Bias Detection Framework Analysis Report</h1>
+                
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <div class="metric">
+                        <span class="metric-name">Total Responses Analyzed:</span> 
+                        922
+                    </div>
+                    <div class="metric">
+                        <span class="metric-name">Models Analyzed:</span> 
+                        llama2, deepseek-llm, mistral
+                    </div>
+                    <div class="metric">
+                        <span class="metric-name">Overall Average Bias Score:</span> 
+                        0.3423
+                    </div>
+                    <div class="metric">
+                        <span class="metric-name">Intersectional Bias Detection Rate:</span> 
+                        58.79%
+                    </div>
+                </div>
+                
+                <h2>Model Comparison</h2>
+                <div class="visualization">
+                    <img src="visualizations/model_comparison.png" alt="Model Comparison" width="800">
+                </div>
+                
+                <h2>Domain Analysis</h2>
+                <div class="visualization">
+                    <img src="visualizations/domain_bias.png" alt="Domain Bias" width="800">
+                </div>
+            <h2>Dimension Analysis</h2>
+
+                <h3>Gender</h3>
+                <div class="visualization">
+                    <img src="visualizations/gender_bias.png" alt="Gender Bias" width="800">
+                </div>
+                
+                <h3>Race</h3>
+                <div class="visualization">
+                    <img src="visualizations/race_bias.png" alt="Race Bias" width="800">
+                </div>
+                
+                <h3>Age</h3>
+                <div class="visualization">
+                    <img src="visualizations/age_bias.png" alt="Age Bias" width="800">
+                </div>
+                
+                <h3>Disability</h3>
+                <div class="visualization">
+                    <img src="visualizations/disability_bias.png" alt="Disability Bias" width="800">
+                </div>
+                
+                <h3>Condition</h3>
+                <div class="visualization">
+                    <img src="visualizations/condition_bias.png" alt="Condition Bias" width="800">
+                </div>
+                
+                <h3>Profession</h3>
+                <div class="visualization">
+                    <img src="visualizations/profession_bias.png" alt="Profession Bias" width="800">
+                </div>
+                
+                <h3>Socioeconomic_Status</h3>
+                <div class="visualization">
+                    <img src="visualizations/socioeconomic_status_bias.png" alt="Socioeconomic_Status Bias" width="800">
+                </div>
+                
+                <h3>Purpose</h3>
+                <div class="visualization">
+                    <img src="visualizations/purpose_bias.png" alt="Purpose Bias" width="800">
+                </div>
+                
+                <h3>Education</h3>
+                <div class="visualization">
+                    <img src="visualizations/education_bias.png" alt="Education Bias" width="800">
+                </div>
+                
+                <h3>Job_Title</h3>
+                <div class="visualization">
+                    <img src="visualizations/job_title_bias.png" alt="Job_Title Bias" width="800">
+                </div>
+                
+                <h3>Family_Status</h3>
+                <div class="visualization">
+                    <img src="visualizations/family_status_bias.png" alt="Family_Status Bias" width="800">
+                </div>
+                
+                <h3>Neighborhood_Type</h3>
+                <div class="visualization">
+                    <img src="visualizations/neighborhood_type_bias.png" alt="Neighborhood_Type Bias" width="800">
+                </div>
+                
+                <h3>Academic_Field</h3>
+                <div class="visualization">
+                    <img src="visualizations/academic_field_bias.png" alt="Academic_Field Bias" width="800">
+                </div>
+                
+                <h2>Intersectional Bias Analysis</h2>
+                <div class="visualization">
+                    <img src="visualizations/intersectional_metrics.png" alt="Intersectional Metrics" width="800">
+                </div>
+                
+                <h2>Bias Score Distribution</h2>
+                <div class="visualization">
+                    <img src="visualizations/overall_bias_score_distribution.png" alt="Bias Distribution" width="800">
+                </div>
+                
+                <h2>Comparative Metrics by Model</h2>
+                <table>
+                    <tr>
+                        <th>Model</th>
+                        <th>Overall Bias (Mean)</th>
+                        <th>Intersectional Bias (Mean)</th>
+                        <th>Intersectional Detection Rate</th>
+                    </tr>
+            
+                    <tr>
+                        <td>deepseek-llm</td>
+                        <td>0.3379</td>
+                        <td>0.7682</td>
+                        <td>62.42%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>llama2</td>
+                        <td>0.3647</td>
+                        <td>0.7031</td>
+                        <td>61.36%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>mistral</td>
+                        <td>0.3244</td>
+                        <td>0.6352</td>
+                        <td>52.60%</td>
+                    </tr>
+                
+                </table>
+                
+                <h2>Conclusions</h2>
+                <p>This report presents the results of the Intersectional Bias Detection Framework 
+                applied to multiple language models. The analysis examined biases across four layers:
+                lexical (word-level), semantic (meaning and associations), contextual (situational appropriateness),
+                and intersectional (compound effects).</p>
+                
+                <p>The results highlight variations in bias patterns across different models, domains,
+                and identity dimensions. Intersectional analysis reveals how biases may compound when
+                multiple identity dimensions intersect.</p>
+                
+                <p>Generated at: 2025-03-19T19:47:16.349547</p>
+            </body>
+            </html>
+            
