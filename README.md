@@ -82,3 +82,8 @@ This repository is for those that are interested in looking at all the results g
 | DeepSeek-LLM | 0.3379 | 0.7682 | 62.42% |
 | Llama2 | 0.3647 | 0.7031 | 61.36% |
 | Mistral | 0.3244 | 0.6352 | 52.06% |
+
+
+![Diagram](data/output/visualizations/Graphpad%20graphs/PNG/Whitebackground/)
+
+
