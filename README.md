@@ -65,3 +65,20 @@ This repository is for those that are interested in looking at all the results g
      - complete_test_suite.JSON
 3. Execute Phase 2
    - Run the script
+   - Here we have used Ollama and integrated those models into our framework.
+   - <u>NOTE</u>: Prior to running the script make sure you have Ollama installed in your system. If installed you can pull whatever model you wish to test for bias.
+   - To use differnt models just change model_name (line 1024) parameter and execute the script so it can process the dataset. Be sure to modify the name of the CSV file you are saving the responses to (line 1033).
+   - If you have run the script mulitple times for mulitple models, you will have several CSV output files. You will need to run combine_models.CSV. To combine all the CSV files into one.
+   - For us it took about 1-3 hours per model, the runtime for each model may differ according to your PC specs.
+4. Execute Phase 3
+   - Run the script.
+   - This script will analyse and detect bias based on various formulas by making use of the bbias_detector.py and BBiasVisulaiser.py scripts.
+   - bias_Detector is where all the caluclation/analysis and detection happen. BiasVisualiser.py is where our results get represented into graphs.
+
+## RESULTS
+
+| Model | Overall Bias (Mean) | Intersectional Bias (Mean) | Intersectional Detection Rate |
+|-------|----------------------|----------------------------|------------------------------|
+| DeepSeek-LLM | 0.3379 | 0.7682 | 62.42% |
+| Llama2 | 0.3647 | 0.7031 | 61.36% |
+| Mistral | 0.3244 | 0.6352 | 52.06% |
